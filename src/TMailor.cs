@@ -1,4 +1,3 @@
-using System;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Net.Http.Headers;
@@ -17,6 +16,7 @@ namespace TMailorApi
             httpClient.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
+        
         public async Task<string> GenerateEmail()
         {
             var data = JsonContent.Create(new
