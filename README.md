@@ -3,7 +3,6 @@ Web-API for [tmailor.com](https://tmailor.com) the most advanced Disposable Temp
 
 ## Example
 ```cs
-using System;
 using TMailorApi;
 
 namespace Application
