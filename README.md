@@ -1,8 +1,21 @@
-# tmailor.sh
+# TMailor.cs
 Web-API for [tmailor.com](https://tmailor.com) the most advanced Disposable Temporary Email service that helps you avoid spam and stay safe
 
 ## Example
-```bash
-source ./tmailor.sh
-generate_email
+```cs
+using System;
+using TMailorApi;
+
+namespace Application
+{
+    internal class Program
+    {
+        static async Task Main()
+        {
+            var api = new TMailor();
+            string email = await api.GenerateEmail();
+            Console.WriteLine(email);
+        }
+    }
+}
 ```
